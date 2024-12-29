@@ -1,0 +1,137 @@
+body {
+  font-family: "Inter", Helvetica, Arial, -apple-system, sans-serif;
+}
+
+.header {
+  background-color: #0066ee;
+}
+.header h4 {
+  font-family: "Inter", Helvetica, Arial, -apple-system, sans-serif;
+  font-weight: 600;
+}
+
+.start-btn {
+  padding: 12px 30px;
+  border-radius: 30px;
+  background-color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.banner {
+  width: 100%;
+  background: linear-gradient(200deg, #0066EE 60%, #9383FB 100%);
+}
+.banner h1 {
+  font-size: 68px;
+  line-height: 80px;
+  font-family: "Inter", Helvetica, Arial, -apple-system, sans-serif;
+  font-weight: 700;
+  color: #fff;
+}
+.banner h1 span {
+  font-family: 500 !important;
+}
+.banner p {
+  color: #fff;
+  font-size: 18px;
+}
+
+.our-members {
+  background-color: #24295f;
+}
+.our-members span {
+  font-size: 68px;
+  line-height: 80px;
+  font-family: "Inter", Helvetica, Arial, -apple-system, sans-serif;
+  font-weight: 700;
+  color: #fff;
+}
+.our-members h3 {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+.our-members p {
+  font-size: 18px;
+}
+
+.helth-goal h1 {
+  font-size: 48px;
+}
+.helth-goal__details span {
+  font-size: 68px;
+  line-height: 80px;
+  font-family: "Inter", Helvetica, Arial, -apple-system, sans-serif;
+  color: #0066ee;
+  font-weight: 600;
+}
+.helth-goal__details h3 {
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 600;
+}
+.helth-goal__details p {
+  color: #6C6C70;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.download__details {
+  background: linear-gradient(200deg, #0066EE 60%, #9383FB 100%);
+  border-radius: 20px;
+  position: relative;
+  padding: 100px;
+}
+.download__details h1 {
+  font-size: 68px;
+  line-height: 80px;
+  font-family: "Inter", Helvetica, Arial, -apple-system, sans-serif;
+  font-weight: 700;
+  color: #fff;
+}
+.download__details span {
+  color: #fff;
+  font-size: 18px;
+  display: block;
+}
+.download__details a {
+  padding: 12px 30px;
+  border-radius: 30px;
+  background-color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.download__details .img-download {
+  position: absolute;
+  right: 100px;
+  top: -160px;
+  width: 280px;
+}
+
+.footer {
+  background-color: #24295f;
+}
+.footer .start-btn {
+  padding: 12px 30px;
+  border-radius: 30px;
+  background-color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.footer h4 {
+  font-family: "Inter", Helvetica, Arial, -apple-system, sans-serif;
+  font-weight: 600;
+  color: #fff;
+}
+.footer p {
+  font-size: 18px;
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */

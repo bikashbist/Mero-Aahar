@@ -1,0 +1,158 @@
+$primary-color: #0066ee;
+$white-color: #fff;
+
+body {
+    font-family: "Inter", Helvetica, Arial, -apple-system, sans-serif;
+}
+
+.header {
+    background-color: $primary-color;
+
+    h4 {
+        font-family: "Inter", Helvetica, Arial, -apple-system, sans-serif;
+        font-weight: 600;
+    }
+}
+
+.start-btn {
+    padding: 12px 30px;
+    border-radius: 30px;
+    background-color: $white-color;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.banner {
+    width: 100%;
+    background: linear-gradient(200.00deg, #0066EE 60%, #9383FB 100%);
+
+    h1 {
+        font-size: 68px;
+        line-height: 80px;
+        font-family: "Inter", Helvetica, Arial, -apple-system, sans-serif;
+        font-weight: 700;
+        color: $white-color;
+
+        span {
+            font-family: 500 !important;
+        }
+    }
+
+    p {
+        color: $white-color;
+        font-size: 18px;
+    }
+}
+
+.our-members {
+    background-color: #24295f;
+
+    span {
+        font-size: 68px;
+        line-height: 80px;
+        font-family: "Inter", Helvetica, Arial, -apple-system, sans-serif;
+        font-weight: 700;
+        color: #fff;
+    }
+
+    h3 {
+        font-family: Montserrat, sans-serif;
+        font-weight: 700;
+        letter-spacing: .2em;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+.helth-goal {
+    h1 {
+        font-size: 48px;
+    }
+
+    &__details {
+        span {
+            font-size: 68px;
+            line-height: 80px;
+            font-family: "Inter", Helvetica, Arial, -apple-system, sans-serif;
+            color: $primary-color;
+            font-weight: 600;
+        }
+
+        h3 {
+            font-size: 36px;
+            line-height: 48px;
+            font-weight: 600;
+        }
+
+        p {
+            color: #6C6C70;
+            font-size: 16px;
+            line-height: 28px;
+        }
+
+    }
+}
+
+.download {
+    &__details {
+        background: linear-gradient(200.00deg, #0066EE 60%, #9383FB 100%);
+        border-radius: 20px;
+        position: relative;
+        padding: 100px;
+
+        h1 {
+            font-size: 68px;
+            line-height: 80px;
+            font-family: "Inter", Helvetica, Arial, -apple-system, sans-serif;
+            font-weight: 700;
+            color: #fff;
+        }
+        span{
+            color: #fff;
+            font-size: 18px;
+            display: block;
+        }
+
+        a {
+            padding: 12px 30px;
+            border-radius: 30px;
+            background-color: #fff;
+            font-weight: 700;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+        }
+        .img-download{
+            position: absolute;
+            right: 100px;
+            top: -160px;
+            width: 280px;
+        }
+    }
+}
+.footer{
+    background-color: #24295f;
+    .start-btn{
+        padding: 12px 30px;
+            border-radius: 30px;
+            background-color: #fff;
+            font-weight: 700;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+    }
+    h4{
+        font-family: "Inter", Helvetica, Arial, -apple-system, sans-serif;
+        font-weight: 600;
+        color: #fff;
+    }
+    p{
+        font-size: 18px;
+        color: #fff;
+    }
+}

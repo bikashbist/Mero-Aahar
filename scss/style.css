@@ -134,4 +134,17 @@ body {
 .footer p {
   font-size: 18px;
   color: #fff;
+}
+.footer ul {
+  padding-left: 0rem;
+}
+.footer ul li {
+  list-style-type: none;
+}
+.footer ul a {
+  color: #fff;
+  font-size: 14px;
+  line-height: 26px;
+  text-decoration: none;
+  display: block;
 }/*# sourceMappingURL=style.css.map */

@@ -155,4 +155,17 @@ body {
         font-size: 18px;
         color: #fff;
     }
+    ul{
+        padding-left: 0rem;
+        li{
+            list-style-type: none;
+        }
+        a{
+            color: #fff;
+            font-size: 14px;
+            line-height: 26px;
+            text-decoration: none;
+            display: block;
+        }
+    }
 }

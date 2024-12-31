@@ -2,6 +2,11 @@ body {
   font-family: "Inter", Helvetica, Arial, -apple-system, sans-serif;
 }
 
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  color: var(--bs-navbar-active-color);
+  background: #fece1a;
+}
+
 .header {
   background-color: #0066ee;
 }
@@ -81,11 +86,16 @@ body {
 }
 .navbar ul li a {
   color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
 }
 .navbar a.nav-link {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 14px;
+  padding: 15px 20px;
+  margin-right: 20px;
 }
 
 .our-members {
@@ -175,6 +185,35 @@ body {
   animation-name: mui-auto-fill-cancel;
   animation-duration: 10ms;
   padding: 16.5px 14px;
+}
+
+.badhboard-banner img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.dashboard .user img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.day-count {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+}
+.day-count .day-nummber {
+  font-size: 50px;
+  font-weight: 700;
+}
+.day-count .day-text p {
+  margin-bottom: 0rem;
+}
+
+.chart-design {
+  border-radius: 8px;
+  box-shadow: rgba(8, 42, 107, 0.1) 0px 0px 12px 0px;
 }
 
 .footer {

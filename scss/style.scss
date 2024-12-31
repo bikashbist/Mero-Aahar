@@ -11,6 +11,34 @@ body {
     h4 {
         font-family: "Inter", Helvetica, Arial, -apple-system, sans-serif;
         font-weight: 600;
+        color: $white-color;
+    }
+    .profile {
+        background: #ffffff;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        i{
+            font-size: 20px;
+            color: $primary-color;
+        }
+    }
+    &__light{
+        background-color: #fff;
+        h4 {
+            color: $primary-color;
+        }
+        .profile {
+            background: $primary-color;
+           
+            i{
+                font-size: 20px;
+                color: $white-color;
+            }
+        }
     }
 }
 
@@ -27,6 +55,8 @@ body {
 .banner {
     width: 100%;
     background: linear-gradient(200.00deg, #0066EE 60%, #9383FB 100%);
+    height: 100vh;
+
 
     h1 {
         font-size: 68px;
@@ -44,8 +74,30 @@ body {
         color: $white-color;
         font-size: 18px;
     }
+    &__img{
+        img{
+            width: 280px;
+        }
+    }
 }
+.navbar{
+    background-color: $primary-color;
+    ul{
+        padding-left: 0px;
+        li{
+            list-style-type: none;
+            a{
+                color: #fff;
 
+            }
+        }
+    }
+    a.nav-link {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 14px;
+    }
+}
 .our-members {
     background-color: #24295f;
 
@@ -133,6 +185,21 @@ body {
             top: -160px;
             width: 280px;
         }
+    }
+}
+.form{
+    &__details {
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 8px 32px;
+    .form-control{
+        margin: 0px;
+        -webkit-tap-highlight-color: transparent;
+        display: block;
+        min-width: 0px;
+        width: 100%;
+        animation-name: mui-auto-fill-cancel;
+        animation-duration: 10ms;
+        padding: 16.5px 14px;
+    }
     }
 }
 .footer{

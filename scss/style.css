@@ -8,6 +8,33 @@ body {
 .header h4 {
   font-family: "Inter", Helvetica, Arial, -apple-system, sans-serif;
   font-weight: 600;
+  color: #fff;
+}
+.header .profile {
+  background: #ffffff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .profile i {
+  font-size: 20px;
+  color: #0066ee;
+}
+.header__light {
+  background-color: #fff;
+}
+.header__light h4 {
+  color: #0066ee;
+}
+.header__light .profile {
+  background: #0066ee;
+}
+.header__light .profile i {
+  font-size: 20px;
+  color: #fff;
 }
 
 .start-btn {
@@ -23,6 +50,7 @@ body {
 .banner {
   width: 100%;
   background: linear-gradient(200deg, #0066EE 60%, #9383FB 100%);
+  height: 100vh;
 }
 .banner h1 {
   font-size: 68px;
@@ -37,6 +65,27 @@ body {
 .banner p {
   color: #fff;
   font-size: 18px;
+}
+.banner__img img {
+  width: 280px;
+}
+
+.navbar {
+  background-color: #0066ee;
+}
+.navbar ul {
+  padding-left: 0px;
+}
+.navbar ul li {
+  list-style-type: none;
+}
+.navbar ul li a {
+  color: #fff;
+}
+.navbar a.nav-link {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 .our-members {
@@ -112,6 +161,20 @@ body {
   right: 100px;
   top: -160px;
   width: 280px;
+}
+
+.form__details {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 8px 32px;
+}
+.form__details .form-control {
+  margin: 0px;
+  -webkit-tap-highlight-color: transparent;
+  display: block;
+  min-width: 0px;
+  width: 100%;
+  animation-name: mui-auto-fill-cancel;
+  animation-duration: 10ms;
+  padding: 16.5px 14px;
 }
 
 .footer {

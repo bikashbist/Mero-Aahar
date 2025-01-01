@@ -216,6 +216,36 @@ body {
   box-shadow: rgba(8, 42, 107, 0.1) 0px 0px 12px 0px;
 }
 
+.content h2.title {
+  font-size: 36px;
+  line-height: 75px;
+  font-family: "Inter", Helvetica, Arial, -apple-system, sans-serif;
+  font-weight: 700;
+}
+.content button.accordion-button.collapsed {
+  font-weight: 600;
+  padding: 15px 0px 15px 0px;
+}
+
+.pdf {
+  width: 100%;
+  aspect-ratio: 4/3;
+}
+
+button.meal-btn {
+  padding: 15px 30px;
+  border-radius: 30px;
+  border: 2px solid #0066ee;
+}
+
+button.meal-btn.active {
+  padding: 15px 30px;
+  border-radius: 30px;
+  color: #fff;
+  border: 2px solid #0066ee;
+  background-color: #0066ee;
+}
+
 .footer {
   background-color: #24295f;
 }

@@ -113,21 +113,24 @@
                         <button class="meal-btn active" data-type="breakfast">Breakfast</button>
                         <button class="meal-btn" data-type="lunch">Lunch</button>
                         <button class="meal-btn" data-type="snacks">Snacks</button>
+                        <button class="meal-btn" data-type="dinner">Dinner</button>
 
-                        <input type="search" class="form-control my-3" id="searchInput" placeholder="Search">
+                        <input type="search" class="form-control search-control my-3" id="searchInput" placeholder="Search">
 
                         <div id="foodList">
                             <!-- Breakfast items -->
                             <div class="food-category breakfast">
-                                <div class="food-item d-flex align-items-center gap-3">
-                                    <img width="75" height="75" class="rounded-circle" src="images/panckage.jpg" alt="Pancakes">
+                                <div class="food-item d-flex align-items-center gap-3 mb-3 ">
+                                    <img width="75" height="75" class="rounded-circle" src="images/panckage.jpg"
+                                        alt="Pancakes">
                                     <div>
-                                        <h5>Pancakes</h5>
+                                        <h5>Breakfast</h5>
                                         <p class="mb-0">150 kcal/100g</p>
                                     </div>
                                 </div>
-                                <div class="food-item d-flex align-items-center gap-3">
-                                    <img width="75" height="75" class="rounded-circle" src="images/panckage.jpg" alt="Pancakes">
+                                <div class="food-item d-flex align-items-center gap-3 mb-3">
+                                    <img width="75" height="75" class="rounded-circle" src="images/panckage.jpg"
+                                        alt="Pancakes">
                                     <div>
                                         <h5>Pancakes</h5>
                                         <p class="mb-0">150 kcal/100g</p>
@@ -137,15 +140,17 @@
 
                             <!-- Lunch items -->
                             <div class="food-category lunch d-none">
-                                <div class="food-item d-flex align-items-center gap-3">
-                                    <img width="75" height="75" class="rounded-circle" src="images/panckage.jpg" alt="Pancakes">
+                                <div class="food-item d-flex align-items-center gap-3 mb-3">
+                                    <img width="75" height="75" class="rounded-circle" src="images/panckage.jpg"
+                                        alt="Pancakes">
                                     <div>
-                                        <h5>Chickent Curry</h5>
+                                        <h5>Lunch Curry</h5>
                                         <p class="mb-0">150 kcal/100g</p>
                                     </div>
                                 </div>
-                                <div class="food-item d-flex align-items-center gap-3">
-                                    <img width="75" height="75" class="rounded-circle" src="images/panckage.jpg" alt="Pancakes">
+                                <div class="food-item d-flex align-items-center gap-3 mb-3">
+                                    <img width="75" height="75" class="rounded-circle" src="images/panckage.jpg"
+                                        alt="Pancakes">
                                     <div>
                                         <h5>Veg Salad</h5>
                                         <p class="mb-0">150 kcal/100g</p>
@@ -155,15 +160,36 @@
 
                             <!-- Snacks items -->
                             <div class="food-category snacks d-none">
-                                <div class="food-item d-flex align-items-center gap-3">
-                                    <img width="75" height="75" class="rounded-circle" src="images/panckage.jpg" alt="Pancakes">
+                                <div class="food-item d-flex align-items-center gap-3 mb-3">
+                                    <img width="75" height="75" class="rounded-circle" src="images/panckage.jpg"
+                                        alt="Pancakes">
                                     <div>
-                                        <h5>Lunch Items</h5>
+                                        <h5>Snacks Items</h5>
                                         <p class="mb-0">150 kcal/100g</p>
                                     </div>
                                 </div>
-                                <div class="food-item d-flex align-items-center gap-3">
-                                    <img width="75" height="75" class="rounded-circle" src="images/panckage.jpg" alt="Pancakes">
+                                <div class="food-item d-flex align-items-center gap-3 mb-3">
+                                    <img width="75" height="75" class="rounded-circle" src="images/panckage.jpg"
+                                        alt="Pancakes">
+                                    <div>
+                                        <h5>Pancakes</h5>
+                                        <p class="mb-0">150 kcal/100g</p>
+                                    </div>
+                                </div>
+                            </div>
+                              <!-- dinner items -->
+                              <div class="food-category dinner d-none">
+                                <div class="food-item d-flex align-items-center gap-3 mb-3">
+                                    <img width="75" height="75" class="rounded-circle" src="images/panckage.jpg"
+                                        alt="Pancakes">
+                                    <div>
+                                        <h5>Dinner Items</h5>
+                                        <p class="mb-0">150 kcal/100g</p>
+                                    </div>
+                                </div>
+                                <div class="food-item d-flex align-items-center gap-3 mb-3">
+                                    <img width="75" height="75" class="rounded-circle" src="images/panckage.jpg"
+                                        alt="Pancakes">
                                     <div>
                                         <h5>Pancakes</h5>
                                         <p class="mb-0">150 kcal/100g</p>
@@ -250,6 +276,33 @@
         </div>
     </footer>
 
+        <!-- Bootstrap Modal -->
+        <div class="modal fade" id="foodModal" tabindex="-1" aria-labelledby="foodModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="foodModalLabel">Food Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="d-flex align-items-center gap-3">
+                            <img id="modalFoodImage" width="100" height="100" class="rounded-circle" src="" alt="Food Image">
+                            <div>
+                                <h5 id="modalFoodName"></h5>
+                                <p id="modalFoodInfo" class="mb-0"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Add</button>
+
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
@@ -257,7 +310,7 @@
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -289,13 +342,69 @@
                         const items = category.querySelectorAll(".food-item");
                         items.forEach(item => {
                             const name = item.querySelector("h5").innerText
-                            .toLowerCase();
+                                .toLowerCase();
                             if (name.includes(searchTerm)) {
                                 item.style.display = "flex";
                             } else {
                                 item.style.display = "none";
                             }
                         });
+                    }
+                });
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const foodItems = document.querySelectorAll(".food-item");
+            const modalFoodImage = document.getElementById("modalFoodImage");
+            const modalFoodName = document.getElementById("modalFoodName");
+            const modalFoodInfo = document.getElementById("modalFoodInfo");
+
+            foodItems.forEach(item => {
+                item.addEventListener("click", () => {
+                    // Get food item details
+                    const foodImage = item.querySelector("img").src;
+                    const foodName = item.querySelector("h5").textContent;
+                    const foodInfo = item.querySelector("p").textContent;
+
+                    // Populate modal content
+                    modalFoodImage.src = foodImage;
+                    modalFoodName.textContent = foodName;
+                    modalFoodInfo.textContent = foodInfo;
+
+                    // Show modal
+                    const foodModal = new bootstrap.Modal(document.getElementById("foodModal"));
+                    foodModal.show();
+                });
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const buttons = document.querySelectorAll(".meal-btn");
+            const foodCategories = document.querySelectorAll(".food-category");
+
+            buttons.forEach(button => {
+                button.addEventListener("click", () => {
+                    // Remove active class from all buttons
+                    buttons.forEach(btn => btn.classList.remove("active"));
+
+                    // Add active class to clicked button
+                    button.classList.add("active");
+
+                    // Get data-type of clicked button
+                    const type = button.getAttribute("data-type");
+
+                    // Hide all food categories
+                    foodCategories.forEach(category => {
+                        category.classList.add("d-none");
+                    });
+
+                    // Show the selected food category
+                    const selectedCategory = document.querySelector(`.food-category.${type}`);
+                    if (selectedCategory) {
+                        selectedCategory.classList.remove("d-none");
                     }
                 });
             });

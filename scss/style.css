@@ -2,7 +2,8 @@ body {
   font-family: "Inter", Helvetica, Arial, -apple-system, sans-serif;
 }
 
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
   color: var(--bs-navbar-active-color);
   background: #fece1a;
 }
@@ -184,7 +185,11 @@ body {
   width: 100%;
   animation-name: mui-auto-fill-cancel;
   animation-duration: 10ms;
-  padding: 16.5px 14px;
+  padding: 16.5px 30px;
+}
+.form__details input#searchInput {
+  border-radius: 30px;
+  background: #edf2fa;
 }
 
 .badhboard-banner img {
@@ -225,6 +230,10 @@ body {
 .content button.accordion-button.collapsed {
   font-weight: 600;
   padding: 15px 0px 15px 0px;
+}
+
+.food-item {
+  cursor: pointer;
 }
 
 .pdf {

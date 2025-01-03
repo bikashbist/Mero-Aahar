@@ -212,7 +212,10 @@ body {
         }
     }
 }
-
+.about-img{
+    float: right;
+    padding: 0px 0px 30px 30px;
+}
 .form {
     &__details {
         box-shadow: rgba(0, 0, 0, 0.12) 0px 8px 32px;
